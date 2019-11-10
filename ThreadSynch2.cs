@@ -2,8 +2,8 @@ using System.Threading;
 
 public class FooBar {
     private int n;
-    static SemaphoreSlim semaphore1 = new SemaphoreSlim(0,1);
-    static SemaphoreSlim semaphore2 = new SemaphoreSlim(0,1);
+    private SemaphoreSlim semaphore1 = new SemaphoreSlim(0,1);
+    private SemaphoreSlim semaphore2 = new SemaphoreSlim(0,1);
 
     public FooBar(int n) {
         this.n = n;
